@@ -1,5 +1,7 @@
 # Chart Data
 
+   ![gif]()
+
 To get started, make sure Node.js is installed, and then add a "config.js" file in public > assets > scripts.
 
 Inside the config.js file, use the following logic to set the api_key and client_id
