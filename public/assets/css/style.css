@@ -1,0 +1,26 @@
+.margin-auto {
+    margin: 0 auto;
+}
+
+#litepicker {
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: #e9ecef;
+    padding-bottom: 10px;
+}
+
+main {
+    padding-bottom: 2rem;
+}
+
+.footer {
+    height: 70px;
+}
+
+.footer-link {
+    position: absolute;
+    bottom: 0;
+}

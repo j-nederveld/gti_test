@@ -1,0 +1,27 @@
+{
+  "name": "gti-test",
+  "version": "1.0.0",
+  "description": "responsive event calendar",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --verbose test/*",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-nederveld/gti-test.git"
+  },
+  "author": "John Nederveld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-nederveld/gti-test/issues"
+  },
+  "homepage": "https://github.com/j-nederveld/gti-test#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "lightpick": "^1.6.2"
+  }
+}
