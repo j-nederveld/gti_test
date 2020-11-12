@@ -37,20 +37,6 @@ var myChart = new Chart(ctx, {
   },
 });
 
-$.getJSON(
-  "https://appsrv.fastsensor.us:8890/oauth2/token?client_id=" +
-    client_id +
-    "&api_key=" +
-    api_key
-)
-  .done(function (data) {
-    tokenID = data.access_token;
-  })
-  .fail(function (jqxhr, textStatus, error) {
-    var err = textStatus + ", " + error;
-    console.log("Request Failed: " + err);
-  });
-
 //set up range selector
 var picker = new Litepicker({
   element: document.getElementById("litepicker"),
@@ -79,9 +65,24 @@ var picker = new Litepicker({
   },
 });
 
+//get a tokenID from the api
+$.getJSON(
+  "https://appsrv.fastsensor.us:8890/oauth2/token?client_id=" +
+    client_id +
+    "&api_key=" +
+    api_key
+)
+  .done(function (data) {
+    tokenID = data.access_token;
+  })
+  .fail(function (jqxhr, textStatus, error) {
+    var err = textStatus + ", " + error;
+    console.log("Request Failed: " + err);
+  });
+
 //get data from the API
 function getData() {
-  //only call if there is a start/end date
+//only call if there is a start/end date
   if (dateRange.length !== 2) {
     return;
   }
