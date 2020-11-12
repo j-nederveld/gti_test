@@ -18,6 +18,7 @@ var myChart = new Chart(ctx, {
     datasets: [
       {
         label: "# of Events",
+        backgroundColor: 'rgb(53, 196, 158)',
         data: [],
         borderWidth: 1,
       },
@@ -159,7 +160,6 @@ function convertTimeStamp(timestamp) {
 
 //sort through the responses. dates will be the dates with any duplicates removed, and eventCount will count the number of events associated with each date by counting how many times each date occurred.
 function sortEvents(events) {
-  console.log(events);
   var dates = [],
     eventCount = [],
     prev;
@@ -173,7 +173,6 @@ function sortEvents(events) {
     }
     prev = events[i];
   }
-  console.log(eventCount);
   addData(dates, eventCount);
 }
 
@@ -182,4 +181,5 @@ function addData(labels, data) {
   myChart.data.datasets[0].data = data;
   myChart.data.labels = labels;
   myChart.update();
+
 }
