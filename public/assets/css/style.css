@@ -9,11 +9,11 @@
 
 footer {
   background-color: #e9ecef;
-  padding-bottom: 10px;
 }
 
 main {
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -21,6 +21,7 @@ main {
 }
 
 .footer-link {
+  margin-bottom: 10px;
   position: absolute;
   bottom: 0;
 }
