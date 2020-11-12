@@ -1,6 +1,6 @@
 # Chart Data
 
-   ![gif]()
+![gif](https://github.com/j-nederveld/gti_test/blob/main/public/assets/img/gti_test.gif?raw=true)
 
 To get started, make sure Node.js is installed, and then add a "config.js" file in public > assets > scripts.
 
